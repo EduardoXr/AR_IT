@@ -18,7 +18,7 @@ imageTargetSrc: "https://cdn.glitch.global/c32f3e84-1bc2-46d0-9f21-0f1dea41d8bf/
       });
       const {renderer, scene, camera} = mindarThree;
       const anchor = mindarThree.addAnchor(0);
-      const geometry = new THREE.PlaneGeometry(1.5, 1.5);
+      const geometry = new THREE.PlaneGeometry(5, 5);
       const material = new THREE.MeshBasicMaterial( {color: 0x00ffff, transparent: true, opacity: 0.5} );
       const plane = new THREE.Mesh( geometry, material );
       anchor.group.add(plane);
@@ -63,7 +63,7 @@ z-index: 2;
      
       <a-assets>
        
-        <a-asset-item id="avatarModel" src="https://cdn.glitch.global/622e7010-5629-44bd-ab9b-fdc18c327eac/BicAR.gltf?v=1677803565608"></a-asset-item>
+        <a-asset-item id="avatarModel" src="https://cdn.glitch.global/c32f3e84-1bc2-46d0-9f21-0f1dea41d8bf/empreendimento.gltf?v=1678284633409"></a-asset-item>
       </a-assets>
 
 
@@ -75,7 +75,7 @@ z-index: 2;
      
         <a-gltf-model rotation="90 0 0 "
                       position="0 0 0.1"
-                      scale="1 1 1"
+                      scale="0.01 0.01 0.01"
                       src="#avatarModel"
                       ></a-gltf-model>
        
